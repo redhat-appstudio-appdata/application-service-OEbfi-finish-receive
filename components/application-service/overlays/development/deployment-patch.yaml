@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: application-service
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/johnmcollier-tenant/application-service/application-service@sha256:e254e8a6c744d6cb58d467653a81e32fefb0c7167a4e8c2d6cd401c839b4ef3f
+        name: container-image
+        resources: {}
+status: {}
