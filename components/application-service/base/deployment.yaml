@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: application-service
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/johnmcollier-tenant/application-service/application-service@sha256:e254e8a6c744d6cb58d467653a81e32fefb0c7167a4e8c2d6cd401c839b4ef3f
         imagePullPolicy: Always
         name: container-image
         ports:
